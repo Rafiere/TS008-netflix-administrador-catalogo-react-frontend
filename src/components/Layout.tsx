@@ -7,6 +7,11 @@ import React from "react";
  * os filhos desse componente.
  */
 
+/**
+ * A propriedade "sx" é um superset do CSS que permite a utilização de
+ * várias propriedades, adaptadas para o Material UI.
+ */
+
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Box>
