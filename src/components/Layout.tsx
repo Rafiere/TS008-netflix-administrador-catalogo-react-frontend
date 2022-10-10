@@ -20,7 +20,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
         sx={{
           mt: 4,
           mb: 4,
-          bg: "white",
         }}
       >
         {children}

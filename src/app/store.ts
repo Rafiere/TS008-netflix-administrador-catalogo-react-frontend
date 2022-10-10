@@ -1,9 +1,17 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import counterReducer from "../features/counter/counterSlice";
+import categoriesReducer from "../features/categories/categorySlice";
+
+/**
+ * Uma store é, basicamente, um grande objeto que
+ * contém vários outros objetos dentro. Abaixo, temos
+ * o objeto que representa a store atual.
+ */
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    categories: categoriesReducer,
   },
 });
 
